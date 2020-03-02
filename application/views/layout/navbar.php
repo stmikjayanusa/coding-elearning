@@ -1,12 +1,14 @@
 <?php $urls = $this->uri->segment(2) ?>
 <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
 	<ul class="nav navbar-nav">
-		<li><a href="#"><i class="icon-home4"></i> Home</a></li>
+		<li class="<?= $urls == "welcome" ? "active" : null ?>"><a href="<?= site_url('welcome') ?>"><i class="icon-home4"></i> Home</a></li>
 		<?php if ($urls == null) { ?>
-			<li class="dropdown">
+			<li class="dropdown <?= $urls == "tahun-ajaran" ? "active" : null ?>">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-stack2"></i> Master Data <span class="caret"></span></a>
 				<ul class="dropdown-menu" role="menu">
-					<li><a href="#">Tahun Ajaran</a></li>
+					<li class="<?= $urls == "tahun-ajaran" ? "active" : null ?>">
+						<a href="<?= site_url('tahun-ajaran') ?>">Tahun Ajaran</a>
+					</li>
 					<li><a href="#">Jurusan</a></li>
 					<li><a href="#">Tingkatan Kelas</a></li>
 					<li><a href="#">Guru</a></li>
