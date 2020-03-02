@@ -4,6 +4,8 @@
 <link rel="stylesheet" href="<?= theme() ?>bower_components/font-awesome/css/font-awesome.min.css">
 <!-- Ionicons -->
 <link rel="stylesheet" href="<?= theme() ?>bower_components/Ionicons/css/ionicons.min.css">
+<!-- DataTables -->
+<link rel="stylesheet" href="<?= theme() ?>bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
 <link rel="stylesheet" href="<?= theme() ?>bower_components/icomoon/styles.css">
 <!-- Theme style -->
 <link rel="stylesheet" href="<?= theme() ?>dist/css/AdminLTE.min.css">
@@ -25,6 +27,9 @@
 <script src="<?= theme() ?>bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="<?= theme() ?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="<?= theme() ?>bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="<?= theme() ?>bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <!-- SlimScroll -->
 <script src="<?= theme() ?>bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
@@ -33,3 +38,10 @@
 <script src="<?= theme() ?>dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?= theme() ?>dist/js/demo.js"></script>
+<script>
+	$(function() {
+		$('.data-tabel').DataTable({
+			'ordering': false,
+		})
+	})
+</script>

@@ -21,13 +21,16 @@ USE `elearning`;
 DROP TABLE IF EXISTS `tahun_ajaran`;
 
 CREATE TABLE `tahun_ajaran` (
-  `id_tahun` int(11) NOT NULL,
+  `id_tahun` int(11) NOT NULL AUTO_INCREMENT,
   `nama_tahun` char(15) NOT NULL,
   `status_tahun` char(1) NOT NULL,
   PRIMARY KEY (`id_tahun`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tahun_ajaran` */
+
+insert  into `tahun_ajaran`(`id_tahun`,`nama_tahun`,`status_tahun`) values 
+(1,'2019/2020','0');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
