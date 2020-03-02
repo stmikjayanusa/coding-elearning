@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `tahun_ajaran`;
 CREATE TABLE `tahun_ajaran` (
   `id_tahun` int(11) NOT NULL,
   `nama_tahun` char(15) NOT NULL,
-  `status_tahun` char(5) NOT NULL,
+  `status_tahun` char(1) NOT NULL,
   PRIMARY KEY (`id_tahun`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
